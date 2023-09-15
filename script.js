@@ -20,6 +20,9 @@ let Mode = "black";
 function create_grid(){
     
     dimension = prompt("Set a grid size", 16);
+    if(dimension > 100){
+        dimension = 100;
+    }
    
     for(let  i = 0; i < dimension*dimension ; i++){
         const div = document.createElement('div'); 
